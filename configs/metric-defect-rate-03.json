@@ -1,0 +1,12 @@
+{
+  "metric_id": "metric-defect-rate-03",
+  "name": "周缺陷率",
+  "category": "quality",
+  "definition": "周缺陷数 ÷ 周提交数。",
+  "calculation_type": "ratio",
+  "data_input_schema": { "x": "submitted", "y": "defects" },
+  "output_kind": "suggestion",
+  "formula": "SUM(defects) / SUM(submitted)",
+  "suggestion_rule": "缺陷率高于 5% 时提示启动复盘",
+  "anonymized_note": "脱敏模拟数据，非真实客户"
+}
