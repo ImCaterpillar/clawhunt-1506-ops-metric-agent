@@ -1,0 +1,12 @@
+{
+  "metric_id": "metric-cac-02",
+  "name": "获客成本率",
+  "category": "customers",
+  "definition": "获客成本 ÷ 新客数，反映单位新客获取成本。",
+  "calculation_type": "ratio",
+  "data_input_schema": { "x": "new_customers", "y": "acquisition_cost" },
+  "output_kind": "calculation",
+  "formula": "SUM(acquisition_cost) / SUM(new_customers)",
+  "suggestion_rule": "单位成本超过阈值时提示检查投放渠道",
+  "anonymized_note": "脱敏模拟数据，非真实客户"
+}
