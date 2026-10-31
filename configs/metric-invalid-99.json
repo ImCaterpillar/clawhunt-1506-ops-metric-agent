@@ -1,0 +1,9 @@
+{
+  "metric_id": "metric-invalid-99",
+  "name": "非法配置",
+  "category": "unknown",
+  "definition": "缺必填、category 非法、calculation_type 空、额外字段。",
+  "calculation_type": "sum",
+  "extra_field_not_allowed": true,
+  "data_input_schema": { "x": "a", "y": "b" }
+}
