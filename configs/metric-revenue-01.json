@@ -1,0 +1,12 @@
+{
+  "metric_id": "metric-revenue-01",
+  "name": "周营收",
+  "category": "revenue",
+  "definition": "一周内去重订单金额合计（金额列 unit_amount，数量列 qty）。",
+  "calculation_type": "sum",
+  "data_input_schema": { "x": "unit_amount", "y": "qty", "group_by": "week" },
+  "output_kind": "fact",
+  "formula": "SUM(unit_amount * qty)",
+  "suggestion_rule": "连续两周下降时提示复盘定价与转化",
+  "anonymized_note": "样例为脱敏模拟数据，不含真实客户"
+}
